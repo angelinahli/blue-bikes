@@ -56,9 +56,13 @@ df$stoptime[1:5]
 
 # making a 5% simple random sample of data for convenient use
 set.seed(1)
-df.simp.sample <- df[sample(nrow(df), nrow(df) * 0.05),]
-dim(df.simp.sample)
+df.small.sample <- df[sample(nrow(df), nrow(df) * 0.05),]
+dim(df.small.sample)
+
+# and a 25% simple random sample for larger analyses
+df.large.sample <- df[sample(nrow(df), nrow(df) * 0.25),]
+dim(df.large.sample)
 
 # saving it all for later use
-saveRDS(df, "data/intermediate/hubway.rds")
-saveRDS(df.simp.sample, "data/intermediate/hubway_sample.rds")
+saveRDS(df.large.sample, "data/intermediate/hubway_lg.rds")
+saveRDS(df.small.sample, "data/intermediate/hubway_sm.rds")
