@@ -10,7 +10,8 @@
 setwd("~/Desktop/Code/in_progress/blue-bikes/")
 
 ## uncomment whichever dataset you need
-# df <- readRDS("data/intermediate/hubway_lg.rds")
-# df.sample <- readRDS("data/intermediate/hubway_sample.rds")
+# df.test <- readRDS("data/intermediate/test.rds")
+# df.train <- readRDS("data/intermediate/train.rds")
+# df.validate <- readRDS("data/intermediate/validate.rds")
 
 # rest of your code here
