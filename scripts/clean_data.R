@@ -3,12 +3,7 @@
 # filename: clean_data.R
 # description: short script to clean, compile and save all data in RDS format
 
-# NOTE - TO RUN AGAIN:
-# (1) set working dir to a folder
-# (2) make sure there exists a folder at path data/input
-# (3) make sure there exists a folder at path data/intermediate
-# (4) download all available input files from data source and store in data/input
-# (5) run code
+# OLD CODE: DON'T RUN AGAIN.
 
 required.pkgs <- c("splitstackshape", "lubridate")
 new.pkgs <- required.pkgs[!(required.pkgs %in% installed.packages()[,"Package"])]
