@@ -49,6 +49,5 @@ stations$missing <- is.na(stations$incoming) || is.na(stations$outgoing)
 stations[stations$missing,]
 
 stations$flux <- stations$incoming - stations$outgoing
-plot(flux~day, data=stations)
 
-nrow(stations)
+saveRDS(stations, "data/intermediate/reshaped_test.rds")
