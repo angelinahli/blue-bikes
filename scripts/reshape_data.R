@@ -1,7 +1,7 @@
-# filename: get_date.R
+# filename: reshape_data.R
 # author: Angelina Li
 # date: 12/06/2018
-# desc: weekday riderships graphics
+# desc: created some intermediate datasets
 
 required.pkgs <- c("lubridate", "dplyr", "reshape")
 new.pkgs <- required.pkgs[!(required.pkgs %in% installed.packages()[,"Package"])]
